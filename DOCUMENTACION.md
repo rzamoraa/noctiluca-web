@@ -1,5 +1,9 @@
 # 📚 Índice de Documentación - NOCTILUCA
 
+> ⚠️ **INFORMACIÓN CLAVE DEL PROYECTO:**
+> - **Contraseña de acceso privado (Página en Construcción):** `noctiluca2026`
+> - **Ver el estado de tu página (GitHub Actions a Hostinger):** [Ver Despliegues Aquí](https://github.com/rzamoraa/noctiluca-web/actions)
+
 Bienvenido a tu portafolio de NOCTILUCA. Este índice te guiará a los documentos correctos según lo que necesites.
 
 ## 🚀 Comenzar (Para Nuevos Usuarios)
