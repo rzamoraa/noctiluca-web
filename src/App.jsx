@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import About from './components/About'
@@ -10,10 +10,23 @@ import Divider from './components/Divider'
 import Separador from './components/separador.jsx'
 import ClientsTicker from './components/ClientsTicker.jsx'
 import LoopGif from './components/LoopGif.jsx'
+import ComingSoon from './components/ComingSoon.jsx'
 
 
 function App() {
   const [selectedProject, setSelectedProject] = useState(null)
+  const [isUnlocked, setIsUnlocked] = useState(false)
+
+  // Revisar si ya habíamos puesto la contraseña antes
+  useEffect(() => {
+    const unlocked = localStorage.getItem('noctiluca_unlocked') === 'true'
+    setIsUnlocked(unlocked)
+  }, [])
+
+  // Si no está desbloqueado, mostrar la pantalla de construcción
+  if (!isUnlocked) {
+    return <ComingSoon onUnlock={() => setIsUnlocked(true)} />
+  }
 
   if (selectedProject) {
     return (
