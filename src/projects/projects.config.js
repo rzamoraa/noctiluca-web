@@ -18,17 +18,39 @@ import anaGabrielGallery5 from './tour-ana-gabriel-2025/images/gallery-5.jpg'
 import anaGabrielGallery6 from './tour-ana-gabriel-2025/images/gallery-6.jpg'
 
 import manaMain from './tour-mana-2025-2026/images/main.jpg'
-import manaGallery1 from './tour-mana-2025-2026/images/gallery-1.jpg'
-import manaGallery2 from './tour-mana-2025-2026/images/gallery-2.jpg'
-import manaGallery3 from './tour-mana-2025-2026/images/gallery-3.jpg'
-import manaGallery4 from './tour-mana-2025-2026/images/gallery-4.jpg'
-import manaGallery5 from './tour-mana-2025-2026/images/gallery-5.jpg'
-import manaGallery6 from './tour-mana-2025-2026/images/gallery-6.jpg'
-import manaGallery7 from './tour-mana-2025-2026/images/gallery-7.jpg'
-import manaGallery8 from './tour-mana-2025-2026/images/gallery-8.jpg'
-import manaGallery9 from './tour-mana-2025-2026/images/gallery-9.jpg'
-import manaGallery10 from './tour-mana-2025-2026/images/gallery-10.jpg'
-import manaGallery11 from './tour-mana-2025-2026/images/gallery-11.jpg'
+import manaGallery1 from './tour-mana-2025-2026/images/gallery-1.jpg';
+import manaGallery2 from './tour-mana-2025-2026/images/gallery-2.jpg';
+import manaGallery3 from './tour-mana-2025-2026/images/gallery-3.jpg';
+import manaGallery4 from './tour-mana-2025-2026/images/gallery-4.jpg';
+import manaGallery5 from './tour-mana-2025-2026/images/gallery-5.jpg';
+import manaGallery6 from './tour-mana-2025-2026/images/gallery-6.jpg';
+import manaGallery7 from './tour-mana-2025-2026/images/gallery-7.jpg';
+import manaGallery8 from './tour-mana-2025-2026/images/gallery-8.jpg';
+import manaGallery9 from './tour-mana-2025-2026/images/gallery-9.jpg';
+import manaGallery10 from './tour-mana-2025-2026/images/gallery-10.jpg';        
+import manaGallery11 from './tour-mana-2025-2026/images/gallery-11.jpg';        
+import manaGallery12 from './tour-mana-2025-2026/images/gallery-12.jpg';        
+import manaGallery13 from './tour-mana-2025-2026/images/gallery-13.jpg';        
+import manaGallery14 from './tour-mana-2025-2026/images/gallery-14.jpg';        
+import manaGallery15 from './tour-mana-2025-2026/images/gallery-15.jpg';        
+import manaGallery16 from './tour-mana-2025-2026/images/gallery-16.jpg';        
+import manaGallery17 from './tour-mana-2025-2026/images/gallery-17.jpg';        
+import manaGallery18 from './tour-mana-2025-2026/images/gallery-18.jpg';        
+import manaGallery19 from './tour-mana-2025-2026/images/gallery-19.jpg';        
+import manaGallery20 from './tour-mana-2025-2026/images/gallery-20.jpg';        
+import manaGallery21 from './tour-mana-2025-2026/images/gallery-21.jpg';        
+import manaGallery22 from './tour-mana-2025-2026/images/gallery-22.jpg';        
+import manaGallery23 from './tour-mana-2025-2026/images/gallery-23.jpg';        
+import manaGallery24 from './tour-mana-2025-2026/images/gallery-24.jpg';        
+import manaGallery25 from './tour-mana-2025-2026/images/gallery-25.jpg';        
+import manaGallery26 from './tour-mana-2025-2026/images/gallery-26.jpg';        
+import manaGallery27 from './tour-mana-2025-2026/images/gallery-27.jpg';        
+import manaGallery28 from './tour-mana-2025-2026/images/gallery-28.jpg';        
+import manaGallery29 from './tour-mana-2025-2026/images/gallery-29.jpg';        
+import manaGallery30 from './tour-mana-2025-2026/images/gallery-30.jpg';        
+import manaGallery31 from './tour-mana-2025-2026/images/gallery-31.jpg';        
+import manaGallery32 from './tour-mana-2025-2026/images/gallery-32.jpg';        
+import manaGallery33 from './tour-mana-2025-2026/images/gallery-33.jpg';
 
 export const projects = [
   {
@@ -247,7 +269,29 @@ export const projects = [
       manaGallery8,
       manaGallery9,
       manaGallery10,
-      manaGallery11
+      manaGallery11,
+      manaGallery12,
+      manaGallery13,
+      manaGallery14,
+      manaGallery15,
+      manaGallery16,
+      manaGallery17,
+      manaGallery18,
+      manaGallery19,
+      manaGallery20,
+      manaGallery21,
+      manaGallery22,
+      manaGallery23,
+      manaGallery24,
+      manaGallery25,
+      manaGallery26,
+      manaGallery27,
+      manaGallery28,
+      manaGallery29,
+      manaGallery30,
+      manaGallery31,
+      manaGallery32,
+      manaGallery33
     ],
     videos: [],
     details: {
