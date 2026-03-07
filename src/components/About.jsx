@@ -35,7 +35,7 @@ const About = () => {
                <h3 className={`text-[3.8vw] sm:text-[3vw] md:text-3xl font-bold tracking-[0.05em] md:tracking-[0.15em] mb-[1vw] md:mb-2 transition-all duration-500 group-hover:scale-110 whitespace-nowrap ${item.color}`}>
                  {item.title}
                </h3>
-               <p className="text-gray-500 text-[1.6vw] sm:text-[1.2vw] md:text-xs tracking-[0.1em] md:tracking-[0.2em] uppercase opacity-60 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+               <p className="text-gray-500 text-[1.6vw] sm:text-[1.2vw] md:text-xs tracking-widest md:tracking-[0.2em] uppercase opacity-60 group-hover:opacity-100 transition-opacity whitespace-nowrap">
                  {item.desc}
                </p>
              </div>

@@ -60,7 +60,7 @@ const ProjectDetail = ({ project, onClose }) => {
         
         {/* Catchphrase Hero text */}
         {project.catchphrase && (
-          <div className="w-full max-w-4xl mx-auto text-center mb-16 md:mb-24 mt-4 px-6 border-y border-white/5 py-12 bg-white/[0.01]">
+          <div className="w-full max-w-4xl mx-auto text-center mb-16 md:mb-24 mt-4 px-6 border-y border-white/5 py-12 bg-white/1">
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-medium text-white leading-tight tracking-wide">
               <span className="text-noctiluca-primary opacity-80">{project.catchphrase.prefix} </span>
               {project.catchphrase.highlight + " "}
