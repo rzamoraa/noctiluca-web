@@ -98,16 +98,16 @@ const Portfolio = ({ setSelectedProject }) => {
                 </div>
                 
                 {/* Overlay Content */}
-                <div className="absolute inset-0 bg-black/60 md:bg-linear-to-t md:from-black/90 md:via-transparent md:to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center md:justify-end items-center p-1 md:p-8 text-center">
+                <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 md:via-transparent to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end items-center p-3 md:p-8 text-center">
                   <div className="transform translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-500 flex flex-col items-center w-full">
-                    <span className="hidden md:block text-noctiluca-accent/80 text-xs tracking-widest uppercase mb-2">
+                    <span className="text-noctiluca-accent/80 text-[6px] md:text-xs tracking-widest uppercase mb-1 md:mb-2 block line-clamp-1">
                       {project.category} — {project.year}
                     </span>
-                    <h3 className="text-white text-[8px] leading-tight md:text-2xl font-light md:tracking-wide mb-0 md:mb-3 h-auto md:h-18 break-words text-center">
+                    <h3 className="text-white text-[10px] md:text-2xl font-light tracking-wide md:tracking-wide mb-1 md:mb-3 h-auto md:h-18 break-words text-center line-clamp-2">
                       {project.title}
                     </h3>
-                    <div className="hidden md:flex w-8 h-px bg-noctiluca-primary mb-10 items-center justify-center"></div>
-                    <span className="hidden md:flex text-[10px] text-gray-400 tracking-[0.2em] uppercase hover:text-white transition-colors h-12 items-center justify-center">
+                    <div className="w-4 md:w-8 h-px bg-noctiluca-primary mb-2 md:mb-10 flex items-center justify-center"></div>
+                    <span className="text-[6px] md:text-[10px] text-gray-400 tracking-[0.2em] uppercase transition-colors h-auto md:h-12 flex items-center justify-center">
                       View Project
                     </span>
                   </div>
