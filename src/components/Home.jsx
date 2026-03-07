@@ -38,7 +38,7 @@ const Home = () => {
         </div>
 
         {/* Navigation - Minimalist */}
-        <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center pt-8">
+        <div className="hidden md:flex flex-col md:flex-row gap-8 md:gap-16 items-center pt-8">
           {['About', 'Portfolio', 'Contact'].map((item) => (
             <button
               key={item}
