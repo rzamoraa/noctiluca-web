@@ -42,7 +42,7 @@ const Footer = () => {
 
   
   return (
-    <footer className={`fixed bottom-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-noctiluca-dark/80 backdrop-blur-md py-4' : 'bg-transparent py-6'}`}>
+    <footer className={`bottom-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-noctiluca-dark/80 backdrop-blur-md py-4' : 'bg-transparent py-6'}`}>
       {/* Decorative top glow */}
 
 

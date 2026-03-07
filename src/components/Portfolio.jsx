@@ -58,25 +58,25 @@ const Portfolio = ({ setSelectedProject }) => {
           </div>
         ) : (
             <div className="flex justify-center w-full pb-12">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row-dense gap-4 auto-rows-[300px] max-w-7xl w-full mx-auto">
+              <div className="grid grid-cols-2 md:grid-cols-4 grid-flow-row-dense gap-2 md:gap-4 auto-rows-auto md:auto-rows-[300px] max-w-7xl w-full mx-auto">
                 {projects.map((project) => {
                   const gridMap = {
-                    '1x1': 'col-span-1 md:col-span-1 row-span-1 md:row-span-1',
-                    '1x2': 'col-span-1 md:col-span-1 row-span-1 md:row-span-2',
-                    '2x1': 'col-span-1 md:col-span-2 row-span-1 md:row-span-1',
-                    '2x2': 'col-span-1 md:col-span-2 row-span-1 md:row-span-2',
-                    '3x1': 'col-span-1 md:col-span-3 row-span-1 md:row-span-1',
-                    '1x3': 'col-span-1 md:col-span-1 row-span-1 md:row-span-3',
-                    '3x2': 'col-span-1 md:col-span-3 row-span-1 md:row-span-2',
-                    '2x3': 'col-span-1 md:col-span-2 row-span-1 md:row-span-3',
-                    '3x3': 'col-span-1 md:col-span-3 row-span-1 md:row-span-3',
-                    '4x1': 'col-span-1 md:col-span-4 row-span-1 md:row-span-1',
-                    '1x4': 'col-span-1 md:col-span-1 row-span-1 md:row-span-4',
-                    '4x2': 'col-span-1 md:col-span-4 row-span-1 md:row-span-2',
-                    '2x4': 'col-span-1 md:col-span-2 row-span-1 md:row-span-4',
-                    '4x3': 'col-span-1 md:col-span-4 row-span-1 md:row-span-3',
-                    '3x4': 'col-span-1 md:col-span-3 row-span-1 md:row-span-4',
-                    '4x4': 'col-span-1 md:col-span-4 row-span-1 md:row-span-4',
+                    '1x1': 'col-span-1 row-span-1',
+                    '1x2': 'col-span-1 md:row-span-2',
+                    '2x1': 'col-span-2 md:col-span-2 md:row-span-1',
+                    '2x2': 'col-span-2 md:col-span-2 md:row-span-2',
+                    '3x1': 'col-span-2 md:col-span-3 md:row-span-1',
+                    '1x3': 'col-span-1 md:row-span-3',
+                    '3x2': 'col-span-2 md:col-span-3 md:row-span-2',
+                    '2x3': 'col-span-2 md:col-span-2 md:row-span-3',
+                    '3x3': 'col-span-2 md:col-span-3 md:row-span-3',
+                    '4x1': 'col-span-2 md:col-span-4 md:row-span-1',
+                    '1x4': 'col-span-1 md:row-span-4',
+                    '4x2': 'col-span-2 md:col-span-4 md:row-span-2',
+                    '2x4': 'col-span-2 md:row-span-4',
+                    '4x3': 'col-span-2 md:col-span-4 md:row-span-3',
+                    '3x4': 'col-span-2 md:col-span-3 md:row-span-4',
+                    '4x4': 'col-span-2 md:col-span-4 md:row-span-4',
                   };
                   
                   let spanClasses = gridMap[project.gridSize] || gridMap['1x1'];
@@ -85,29 +85,29 @@ const Portfolio = ({ setSelectedProject }) => {
               <div
                 key={project.id}
                 onClick={() => handleProjectClick(project)}
-                className={`cursor-pointer group relative overflow-hidden rounded-sm bg-noctiluca-dark border border-white/10 transition-all duration-500 hover:border-noctiluca-primary/30 h-full w-full ${spanClasses}`}
+                className={`cursor-pointer group relative overflow-hidden rounded-sm bg-noctiluca-dark border border-white/10 transition-all duration-500 hover:border-noctiluca-primary/30 h-full w-full aspect-square md:aspect-auto ${spanClasses}`}
               >
                 {/* Image */}
                 <div className="w-full h-full overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 opacity-80 group-hover:opacity-100"
+                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 opacity-50 md:opacity-80 md:group-hover:opacity-100"
                   />
-                  <div className="absolute inset-0 bg-noctiluca-dark/40 group-hover:bg-transparent transition-colors duration-500"></div>
+                  <div className="absolute inset-0 bg-transparent md:bg-noctiluca-dark/40 group-hover:bg-transparent transition-colors duration-500"></div>
                 </div>
                 
                 {/* Overlay Content */}
-                <div className="absolute inset-0 bg-linear-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end items-center p-8 text-center">
-                  <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 flex flex-col items-center">
-                    <span className="text-noctiluca-accent/80 text-xs tracking-widest uppercase mb-2 block">
+                <div className="absolute inset-0 bg-black/60 md:bg-linear-to-t md:from-black/90 md:via-transparent md:to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center md:justify-end items-center p-1 md:p-8 text-center">
+                  <div className="transform translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-500 flex flex-col items-center w-full">
+                    <span className="hidden md:block text-noctiluca-accent/80 text-xs tracking-widest uppercase mb-2">
                       {project.category} — {project.year}
                     </span>
-                    <h3 className="text-white text-xl md:text-2xl font-light tracking-wide mb-3  h-18 ">
+                    <h3 className="text-white text-[8px] leading-tight md:text-2xl font-light md:tracking-wide mb-0 md:mb-3 h-auto md:h-18 break-words text-center">
                       {project.title}
                     </h3>
-                    <div className="w-8 h-px bg-noctiluca-primary mb-10 flex items-center justify-center "></div>
-                    <span className="text-[10px] text-gray-400 tracking-[0.2em] uppercase hover:text-white transition-colors  h-12 flex items-center justify-center">
+                    <div className="hidden md:flex w-8 h-px bg-noctiluca-primary mb-10 items-center justify-center"></div>
+                    <span className="hidden md:flex text-[10px] text-gray-400 tracking-[0.2em] uppercase hover:text-white transition-colors h-12 items-center justify-center">
                       View Project
                     </span>
                   </div>

@@ -48,7 +48,7 @@ function App() {
     <div className="scroll-container bg-noctiluca-dark">
      
 
-      <Footer />
+     
       <Navbar />
      
       <section className="snap-section">
@@ -76,8 +76,10 @@ function App() {
       <section className="snap-section">
         
         <Contact />
-        
+         <Footer />
       </section>
+
+      
     </div>
   )
 }
