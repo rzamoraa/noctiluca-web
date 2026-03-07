@@ -26,6 +26,9 @@ import manaGallery5 from './tour-mana-2025-2026/images/gallery-5.jpg'
 import manaGallery6 from './tour-mana-2025-2026/images/gallery-6.jpg'
 import manaGallery7 from './tour-mana-2025-2026/images/gallery-7.jpg'
 import manaGallery8 from './tour-mana-2025-2026/images/gallery-8.jpg'
+import manaGallery9 from './tour-mana-2025-2026/images/gallery-9.jpg'
+import manaGallery10 from './tour-mana-2025-2026/images/gallery-10.jpg'
+import manaGallery11 from './tour-mana-2025-2026/images/gallery-11.jpg'
 
 export const projects = [
   {
@@ -241,7 +244,10 @@ export const projects = [
       manaGallery5,
       manaGallery6,
       manaGallery7,
-      manaGallery8
+      manaGallery8,
+      manaGallery9,
+      manaGallery10,
+      manaGallery11
     ],
     videos: [],
     details: {
