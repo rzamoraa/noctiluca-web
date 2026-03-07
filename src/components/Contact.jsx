@@ -64,7 +64,7 @@ const Contact = () => {
             </p>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="w-full space-y-8 px-6 md:px-0">
+          <form onSubmit={handleSubmit} className="w-full space-y-8 px-10 md:px-0">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Name */}
               <div className="group">
@@ -75,7 +75,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   placeholder="NAME"
-                  className="w-full bg-transparent border-b border-white/10 focus:border-noctiluca-accent outline-none py-3 text-white placeholder-gray-600 text-sm md:text-xs tracking-[0.2em] transition-all duration-300 text-center md:text-left"
+                  className="w-full bg-transparent border-b border-white/20 focus:border-noctiluca-accent outline-none py-3 text-white placeholder-gray-500 text-sm md:text-xs tracking-[0.2em] transition-all duration-300 text-center md:text-left"
                 />
               </div>
 
@@ -88,7 +88,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   placeholder="EMAIL"
-                  className="w-full bg-transparent border-b border-white/10 focus:border-noctiluca-accent outline-none py-3 text-white placeholder-gray-600 text-sm md:text-xs tracking-[0.2em] transition-all duration-300 text-center md:text-left"
+                  className="w-full bg-transparent border-b border-white/20 focus:border-noctiluca-accent outline-none py-3 text-white placeholder-gray-500 text-sm md:text-xs tracking-[0.2em] transition-all duration-300 text-center md:text-left"
                 />
               </div>
             </div>
@@ -102,7 +102,7 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 placeholder="SUBJECT"
-                className="w-full bg-transparent border-b border-white/10 focus:border-noctiluca-accent outline-none py-3 text-white placeholder-gray-600 text-sm md:text-xs tracking-[0.2em] transition-all duration-300 text-center md:text-left"
+                className="w-full bg-transparent border-b border-white/20 focus:border-noctiluca-accent outline-none py-3 text-white placeholder-gray-500 text-sm md:text-xs tracking-[0.2em] transition-all duration-300 text-center md:text-left"
               />
             </div>
 
@@ -115,7 +115,7 @@ const Contact = () => {
                 required
                 rows={4}
                 placeholder="MESSAGE"
-                className="w-full bg-transparent border-b border-white/10 focus:border-noctiluca-accent outline-none py-3 text-white placeholder-gray-600 text-sm md:text-xs tracking-[0.2em] transition-all duration-300 resize-none text-center md:text-left"
+                className="w-full bg-transparent border-b border-white/20 focus:border-noctiluca-accent outline-none py-3 text-white placeholder-gray-500 text-sm md:text-xs tracking-[0.2em] transition-all duration-300 resize-none text-center md:text-left"
               ></textarea>
             </div>
 
