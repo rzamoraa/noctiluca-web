@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import ProjectDetail from './ProjectDetail'
+import { useNavigate } from 'react-router-dom'
 import { projects as projectsConfig } from '../projects/projects.config'
 
-const Portfolio = ({ setSelectedProject }) => {
+const Portfolio = () => {
+  const navigate = useNavigate()
   const [projects, setProjects] = useState([])
   const [loading, setLoading] = useState(true)
 
@@ -22,7 +23,7 @@ const Portfolio = ({ setSelectedProject }) => {
   }
 
   const handleProjectClick = (project) => {
-    setSelectedProject(<ProjectDetail project={project} onClose={() => setSelectedProject(null)} />)
+    navigate(`/project/${project.id}`)
   }
 
   return (

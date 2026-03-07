@@ -1,10 +1,13 @@
 import { useState, useEffect } from 'react'
+import { useLocation, useNavigate, matchPath } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import ProjectDetail from './components/ProjectDetail'
+import { projects } from './projects/projects.config'
 import './App.css'
 import Divider from './components/Divider'
 import Separador from './components/separador.jsx'
@@ -14,8 +17,9 @@ import ComingSoon from './components/ComingSoon.jsx'
 
 
 function App() {
-  const [selectedProject, setSelectedProject] = useState(null)
   const [isUnlocked, setIsUnlocked] = useState(false)
+  const location = useLocation()
+  const navigate = useNavigate()
 
   // Revisar si ya habíamos puesto la contraseña antes
   useEffect(() => {
@@ -28,16 +32,24 @@ function App() {
     return <ComingSoon onUnlock={() => setIsUnlocked(true)} />
   }
 
-  if (selectedProject) {
-    return (
-      <div className="relative w-full h-full">
-        {selectedProject}
-      </div>
-    )
+  // Detectar si estamos viendo un proyecto
+  const match = matchPath("/project/:id", location.pathname)
+  const projectId = match?.params.id
+  const selectedProject = projectId ? projects.find(p => p.id === projectId) : null
+
+  const handleCloseProject = () => {
+    navigate('/')
   }
 
   return (
-    <div className="scroll-container bg-noctiluca-dark">
+    <div className="relative w-full h-full">
+      {/* Si hay un proyecto seleccionado, mostrarlo encima */}
+      {selectedProject && (
+        <ProjectDetail project={selectedProject} onClose={handleCloseProject} />
+      )}
+      
+      {/* Contenido principal - Si hay un proyecto abierto, podemos ocultarlo visualmente o dejarlo debajo */}
+      <div className={`scroll-container bg-noctiluca-dark ${selectedProject ? 'hidden' : ''}`}>
      
 
      
@@ -58,7 +70,7 @@ function App() {
       </section>
  
       <section className="snap-section">
-        <Portfolio setSelectedProject={setSelectedProject} />
+        <Portfolio />
        
       </section>
 
@@ -72,6 +84,7 @@ function App() {
       </section>
 
       
+    </div>
     </div>
   )
 }
