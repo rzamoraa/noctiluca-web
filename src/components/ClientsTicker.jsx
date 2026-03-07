@@ -44,15 +44,12 @@ const ClientsTicker = () => {
           {duplicatedClients.map((client, index) => (
             <div 
               key={index} 
-              className="    w-60 h-60 relative  flex items-center justify-center grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default"
+              className="w-32 h-32 md:w-60 md:h-60 relative flex items-center justify-center grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default"
             >
-              <div className=" rounded-md w-46 h-46 flex items-center justify-center"> 
-              {/* Aquí luego puedes intercambiar la etiqueta <p> por un <img src={client.logo} /> si consigues los PNGs */}
-            
+              <div className="rounded-md w-20 h-20 md:w-48 md:h-48 flex items-center justify-center"> 
                 {client.logo && (
-                  <img src={client.logo} alt={`${client.name} Logo`} className=" " />
+                  <img src={client.logo} alt={`${client.name} Logo`} className="w-full h-full object-contain" />
                 )}
-            
              </div>
               
             </div>
