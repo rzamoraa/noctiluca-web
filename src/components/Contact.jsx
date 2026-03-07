@@ -39,7 +39,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full grow bg-noctiluca-dark h-[50vh]  flex flex-col items-center justify-center  relative overflow-hidden"
+      className="w-full grow bg-noctiluca-dark flex flex-col items-center justify-center  relative overflow-hidden"
     >
       <div className="max-w-xl w-full flex flex-col items-center  z-10  justify-center ">
         <LoopGif />

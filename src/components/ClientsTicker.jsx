@@ -1,22 +1,59 @@
 import React from 'react'
 import loopISO from '../assets/LoopISO_1.gif'
-import LATIN_GRAMMY from '../assets/logos/LATIN_GRAMMY.svg' 
-import TELETON from '../assets/logos/TELETON.svg'
+
+// Logos importados directamente de assets/logos/
+import ARJONA from '../assets/logos/ARJONA.svg'
+import CRISMJ from '../assets/logos/CRISMJ.svg'
+import HUMBE from '../assets/logos/HUMBE.svg'
+import JULION from '../assets/logos/JULION ALVAREZ.svg'
+import LATIN_GRAMMY from '../assets/logos/LATIN_GRAMMY.svg'
+import LUISMIGUEL from '../assets/logos/LUISMIGUEL.svg'
+import MANA from '../assets/logos/MANA.svg'
+import MARCO_ANTONIO from '../assets/logos/MARCO ANTONIO SOLIS.svg'
+import PAULINA_RUBIO from '../assets/logos/PAULINA RUBIO.svg'
+import SUPERBOWL from '../assets/logos/SUPERBOWL.svg'
 import VINA23 from '../assets/logos/VINA23.svg'
+import VINA24 from '../assets/logos/VINA24.svg'
 import VINA25 from '../assets/logos/VINA25.svg'
+import VINA26 from '../assets/logos/VINA26.svg'
+import YEISON from '../assets/logos/YEISON JIMENEZ.svg'
+import CHAYANNE from '../assets/logos/CHAYANNE.svg'
+
+import SUPERPERBOWL2 from '../assets/logos/SUPERBOWL2.svg'
+import PABLOCHILLE from '../assets/logos/PABLOCHILLE.svg'
+import KIDVOODOO from '../assets/logos/KIDDVOODOO.svg'
+import ANAGABRIEL from '../assets/logos/ANAGABRIEL.svg'
+import TELETONV2 from '../assets/logos/TELETONV2.svg'
+
+
 
 
 const ClientsTicker = () => {
   // Array estructurado con los clientes confiables para hacer el componente escalable
   const clients = [
-    { name: 'Festival de Viña', logo: LATIN_GRAMMY, text: 'VIÑA DEL MAR' },
-    { name: 'Teleton', logo: TELETON, text: 'CHILE' },
+    { name: 'Latin Grammy', logo: LATIN_GRAMMY, text: 'AWARDS' },
     { name: 'Viña 23', logo: VINA23, text: 'VIÑA DEL MAR' },
+    { name: 'Viña 24', logo: VINA24, text: 'VIÑA DEL MAR' },
     { name: 'Viña 25', logo: VINA25, text: 'VIÑA DEL MAR' },
+    { name: 'Viña 26', logo: VINA26, text: 'VIÑA DEL MAR' },
+    { name: 'Arjona', logo: ARJONA, text: 'TOUR' },
+    { name: 'Chayanne', logo: CHAYANNE, text: 'TOUR' },
+    { name: 'Cris MJ', logo: CRISMJ, text: 'ARTIST' },
+    { name: 'Humbe', logo: HUMBE, text: 'TOUR' },
+    { name: 'Julion Alvarez', logo: JULION, text: 'TOUR' },
+    { name: 'Luis Miguel', logo: LUISMIGUEL, text: 'TOUR' },
+    { name: 'Mana', logo: MANA, text: 'TOUR' },
+    { name: 'Marco Antonio Solis', logo: MARCO_ANTONIO, text: 'TOUR' },
+    { name: 'Paulina Rubio', logo: PAULINA_RUBIO, text: 'TOUR' },
+    { name: 'Superbowl', logo: SUPERBOWL, text: 'EVENT' },
+    { name: 'Yeison Jimenez', logo: YEISON, text: 'ARTIST' },
+    { name: 'Pablo Chill-E', logo: PABLOCHILLE, text: 'ARTIST' },
+    { name: 'Kidd Voodoo', logo: KIDVOODOO, text: 'ARTIST' },
+    { name: 'Ana Gabriel', logo: ANAGABRIEL, text: 'ARTIST' },
+    { name: 'Superbowl 2', logo: SUPERPERBOWL2, text: 'EVENT' },
+    { name: 'Teleton V2', logo: TELETONV2, text: 'CHILE' },
+  ] 
 
-    
-   
-  ]
 
   // Duplicamos el array para crear un loop infinito continuo (Marquee/Ticker effect)
   const duplicatedClients = [...clients, ...clients]

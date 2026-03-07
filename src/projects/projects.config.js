@@ -9,6 +9,40 @@ import menAtWorkVina2024Image from '../assets/projects/men-at-work-vina-2024.svg
 import matteoBocelliVina2026Image from '../assets/projects/matteo-bocelli-vina-2026.svg'
 import pabloChillEVina2026Image from '../assets/projects/pablo-chill-e-vina-2026.svg'
 
+import arjonaMain from './tour-arjorna-2026/images/main.jpg'
+import arjonaGallery1 from './tour-arjorna-2026/images/gallery-1.jpg'
+import arjonaVideo from './tour-arjorna-2026/videos/video-main.mp4'
+
+// Julion Alvarez
+import julionMain from './tour-julion-alvarez/images/main.jpg'
+import julionGallery1 from './tour-julion-alvarez/images/gallery-1.jpg'
+import julionGallery2 from './tour-julion-alvarez/images/gallery-2.jpg'
+import julionGallery3 from './tour-julion-alvarez/images/gallery-3.jpg'
+import julionGallery4 from './tour-julion-alvarez/images/gallery-4.jpg'
+import julionGallery5 from './tour-julion-alvarez/images/gallery-5.jpg'
+import julionGallery6 from './tour-julion-alvarez/images/gallery-6.jpg'
+import julionGallery7 from './tour-julion-alvarez/images/gallery-7.jpg'
+import julionGallery8 from './tour-julion-alvarez/images/gallery-8.jpg'
+
+// Bad Bunny Superbowl
+import badBunnyMain from './arte-conceptual-superbowl-bad-bunny/images/main.jpg'
+import badBunnyGallery1 from './arte-conceptual-superbowl-bad-bunny/images/gallery-1.jpg'
+import badBunnyGallery2 from './arte-conceptual-superbowl-bad-bunny/images/gallery-2.jpg'
+import badBunnyGallery3 from './arte-conceptual-superbowl-bad-bunny/images/gallery-3.avif'
+import badBunnyGallery4 from './arte-conceptual-superbowl-bad-bunny/images/gallery-4.avif'
+
+// Kidd Voodoo
+import kiddVoodooMain from './visuales-kid-voodoo/images/main.jpg'
+import kiddVoodooGallery1 from './visuales-kid-voodoo/images/gallery-1.avif'
+import kiddVoodooGallery2 from './visuales-kid-voodoo/images/gallery-2.jpg'
+import kiddVoodooGallery3 from './visuales-kid-voodoo/images/gallery-3.jpg'
+import kiddVoodooGallery4 from './visuales-kid-voodoo/images/gallery-4.jpg'
+import kiddVoodooGallery5 from './visuales-kid-voodoo/images/gallery-5.jpg'
+import kiddVoodooGallery6 from './visuales-kid-voodoo/images/gallery-6.jpg'
+import kiddVoodooGallery7 from './visuales-kid-voodoo/images/gallery-7.jpg'
+import kiddVoodooGallery8 from './visuales-kid-voodoo/images/gallery-8.jpg'
+import kiddVoodooVideo from './visuales-kid-voodoo/videos/video-main.mp4'
+
 import anaGabrielMain from './tour-ana-gabriel-2025/images/main.jpg'
 import anaGabrielGallery1 from './tour-ana-gabriel-2025/images/gallery-1.jpg'
 import anaGabrielGallery2 from './tour-ana-gabriel-2025/images/gallery-2.jpg'
@@ -304,14 +338,14 @@ export const projects = [
   },
   {
     id: 'tour-humbe-2026',
-    title: 'Humbe - "Esencia" Tour Visuals',
+    title: 'Humbe - "Dueño del Cielo" Tour Visuals',
     catchphrase: {
       prefix: "Sculpting",
-      highlight: "pastel dreams",
+      highlight: "celestial dreams",
       suffix: "in three-dimensional spaces."
     },
-    description: 'We dove deep into the alternative, nostalgic universe of pop phenomenon Humbe to fuel his 2025-2026 Tour. Focusing on a highly curated aesthetic, we crafted surreal landscapes modeled in 3D using a delicate pastel palette, featuring hyper-detailed flora that blossoms dynamically to the rhythm of his electronic ballads. The visual set is meticulously designed to connect directly with the emotional and introspective core of his millions of loyal, young fans.',
-    shortDescription: 'Surreal floral environments and a dreamy pastel palette.',
+    description: 'We dove deep into the alternative, nostalgic universe of pop phenomenon Humbe to fuel his "Dueño del Cielo" Tour. Focusing on a highly curated aesthetic, we expanded his visual narrative into the ethereal, crafting surreal landscapes modeled in 3D. The show features vast, shifting skyscapes and cloud formations that evolve with the show\'s emotional arc, blending with his signature hyper-detailed flora (poppies) that blossom dynamically to the rhythm. The visual set uses a delicate pastel palette to create an intimate, dreamlike atmosphere where the audience feels suspended in the sky along with the artist.',
+    shortDescription: 'Surreal floral environments and a dreamy celestial palette.',
     image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1600&q=80',
     category: 'Tour Visuals',
     year: 2026,
@@ -359,28 +393,27 @@ export const projects = [
 
   {
     id: 'tour-arjorna-2026',
-    title: 'Ricardo Arjona - Digital Scenography',
+    title: 'Ricardo Arjona - "Lo que el seco no dijo" Tour',
     catchphrase: {
       prefix: "Mapping",
       highlight: "intimate storytelling",
       suffix: "onto massive structures."
     },
-    description: 'Providing avant-garde stage accompaniment for the introspective 2026 tour of acclaimed singer-songwriter Ricardo Arjona. We executed a rigorous design process for theatrical virtual environments, including rain-slicked city streets mapped in forced illusionary perspective, melancholic hotel rooms, midnight trains, and bohemian cafés. Every piece was delivered via complex projection mapping over fragmented stage surfaces, reinforcing the narrative weight and deep intimacy of his lyrical poetry.',
+    description: 'Providing avant-garde stage accompaniment for the introspective 2026 tour "Lo que el seco no dijo" by acclaimed singer-songwriter Ricardo Arjona. We executed a rigorous design process for theatrical virtual environments, including rain-slicked city streets mapped in forced illusionary perspective, melancholic hotel rooms, midnight trains, and bohemian cafés. The production features extensive integration of digital characters within the screens and magic-like effects where musicians transition seamlessly between digital content and physical reality. Specialized Artificial Intelligence played a crucial role; as the show reviews the artist\'s entire life, we utilized AI to visualize Ricardo Arjona\'s evolution throughout his career.',
     shortDescription: 'Interactive virtual storytelling mapped directly to the stage structure.',
-    image: 'https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=1600&q=80',
+    image: arjonaMain,
     category: 'Theatrical Visuals / Tour',
     year: 2026,
     client: 'Metamorfosis / Ricardo Arjona',
     gallery: [
-      'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1200&q=80',
-      'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1200&q=80',
-      'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1200&q=80',
-      'https://images.unsplash.com/photo-1533174000273-df0fa04356f5?w=1200&q=80'
+      arjonaGallery1
     ],
-    videos: [],
+    videos: [
+      arjonaVideo
+    ],
     details: {
       role: 'Environment Design & 3D Mapping',
-      tools: ['Unreal Engine', 'Disguise', 'Cinema 4D'],
+      tools: ['Unreal Engine', 'Disguise', 'Cinema 4D', 'AI Generation'],
       scale: 'Global Arena Tour'
     },
     gridSize: '2x2'
@@ -397,13 +430,19 @@ export const projects = [
     },
     description: 'We radically redesigned the visual experience for the massive "palenque" format shows of Julión Álvarez by deploying expansive motion graphics projected across circular (360-degree) LED configurations. The content, rich with modernized Mexican folklore iconography, simulated volumetric lighting forged in pristine gold and silver metals, and explosive kinetic typography, fueled the relentless party atmosphere that characterizes the "King of the Box Office", achieving a hypnotic connection with every angle of the stadium.',
     shortDescription: '360° golden, epic, and explosive content for Palenque/Arena style shows.',
-    image: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1600&q=80',
+    image: julionMain,
     category: 'Tour Visuals / 360',
     year: 2025,
     client: 'Julión Álvarez',
     gallery: [
-      'https://images.unsplash.com/photo-1516280440502-65f536af1217?w=1200&q=80',
-      'https://images.unsplash.com/photo-1506157786151-b8491531f063?w=1200&q=80'
+      julionGallery1,
+      julionGallery2,
+      julionGallery3,
+      julionGallery4,
+      julionGallery5,
+      julionGallery6,
+      julionGallery7,
+      julionGallery8
     ],
     videos: [],
     details: {
@@ -425,13 +464,15 @@ export const projects = [
     },
     description: 'A completely confidential, high-profile engagement involved in the early visual development, concept art, and volumetric pre-visualization during the crucial design pitch phase for Bad Bunny’s iconic appearance at the Superbowl Halftime Show (2020). We forged intense moodboards, luminous animatics, and conducted holographic material stress tests that ultimately helped solidify the dazzling, metallic silver and neon-drenched aesthetic that invaded over 100 million screens worldwide.',
     shortDescription: 'Confidential Concept Art and pre-viz testing for the Halftime Show.',
-    image: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1600&q=80',
+    image: badBunnyMain,
     category: 'Creative Pitch & Concept',
     year: 2020,
     client: 'Bad Bunny Entertainment / NFL',
     gallery: [
-      'https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=1200&q=80',
-      'https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=1200&q=80'
+      badBunnyGallery1,
+      badBunnyGallery2,
+      badBunnyGallery3,
+      badBunnyGallery4
     ],
     videos: [],
     details: {
@@ -510,16 +551,23 @@ export const projects = [
     },
     description: 'We designed, modeled, and executed the core aesthetic universe for the rising star of Chilean rock/urban music: Kidd Voodoo. We forged a visual language heavily saturated with gothic undertones, 2000s American skater culture, aggressive cyberpunk motifs, and glitch-art. Operating throughout massive festival crowds, our live VJ crew deployed real-time generative effects (via TouchDesigner) that melted interactive typography directly into the live camera feeds, unleashing relentless interactive mosh pits.',
     shortDescription: 'Hyper-synthetic, dark, and reactive aesthetics (Glitch & Cyberpunk).',
-    image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1600&q=80',
+    image: kiddVoodooMain,
     category: 'VJing & Interactive Content',
     year: 2024,
     client: 'Kidd Voodoo / Bizarro',
     gallery: [
-      'https://images.unsplash.com/photo-1506157786151-b8491531f063?w=1200&q=80',
-      'https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=1200&q=80',
-      'https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=1200&q=80'
+      kiddVoodooGallery1,
+      kiddVoodooGallery2,
+      kiddVoodooGallery3,
+      kiddVoodooGallery4,
+      kiddVoodooGallery5,
+      kiddVoodooGallery6,
+      kiddVoodooGallery7,
+      kiddVoodooGallery8
     ],
-    videos: [],
+    videos: [
+      kiddVoodooVideo
+    ],
     details: {
       role: 'Live VJ & Visual Synthesis',
       tools: ['TouchDesigner', 'Resolume Arena', 'Blender'],
