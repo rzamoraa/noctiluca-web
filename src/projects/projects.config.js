@@ -299,7 +299,7 @@ export const projects = [
       tools: ['Notch', 'Unreal Engine 5', 'Resolume'],
       scale: 'Global Stadium Tour'
     },
-    gridSize: '1x2' 
+    gridSize: '3x2' 
     
   },
   {
