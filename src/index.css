@@ -35,15 +35,25 @@ html {
 .scroll-container {
   height: 100vh;
   overflow-y: scroll;
-  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
 
+@media (min-width: 768px) {
+  .scroll-container {
+    scroll-snap-type: y mandatory;
+  }
+}
+
 .snap-section {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .snap-section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
 }
 
 /* Gradiente superior suave */
