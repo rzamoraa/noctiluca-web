@@ -12,6 +12,7 @@ import './App.css'
 import Divider from './components/Divider'
 import Separador from './components/separador.jsx'
 import ClientsTicker from './components/ClientsTicker.jsx'
+import TechPartners from './components/TechPartners.jsx'
 import LoopGif from './components/LoopGif.jsx'
 import ComingSoon from './components/ComingSoon.jsx'
 
@@ -67,21 +68,19 @@ function App() {
    
           <section className="snap-section">
         <ClientsTicker />
+        <TechPartners />
       </section>
  
       <section className="snap-section">
         <Portfolio />
+          <Contact />
+         <Footer />
        
       </section>
 
       
 
-      {/* Contact y Footer juntos en una sección snap */}
-      <section className="snap-section">
-        
-        <Contact />
-         <Footer />
-      </section>
+ 
 
       
     </div>
