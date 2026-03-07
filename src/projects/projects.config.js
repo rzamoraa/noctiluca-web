@@ -3,6 +3,12 @@
  * Fully detailed, translated to English, expanded narratives, extra photography, and wordplay catchphrases.
  */
 
+import manuelTurizo2000TourImage from '../assets/projects/manuel-turizo-2000-tour.svg'
+import kapoFestival40Image from '../assets/projects/kapo-festival-40.svg'
+import menAtWorkVina2024Image from '../assets/projects/men-at-work-vina-2024.svg'
+import matteoBocelliVina2026Image from '../assets/projects/matteo-bocelli-vina-2026.svg'
+import pabloChillEVina2026Image from '../assets/projects/pablo-chill-e-vina-2026.svg'
+
 export const projects = [
   {
     id: 'visuales-vina-2023',
@@ -572,7 +578,7 @@ export const projects = [
     },
     description: 'For Manuel Turizo\'s extensive international run of the "2000 Tour" in 2024, we designed a vibrant visual identity that bridged the gap between his urban roots and pop superstardom. The show featured high-energy motion graphics synchronized to his greatest hits, incorporating colorful, tropical aesthetics, neon-lit cityscapes, and dynamic lyric videos that encouraged crowd participation across sold-out arenas in Latin America and Europe.',
     shortDescription: 'Vibrant, high-energy visuals for the international reggaeton star.',
-    image: 'https://images.unsplash.com/photo-1574169207511-e21a21888031?w=1600&q=80',
+    image: manuelTurizo2000TourImage,
     category: 'Tour Visuals',
     year: 2024,
     client: 'La Industria Inc / Manuel Turizo',
@@ -598,7 +604,7 @@ export const projects = [
     },
     description: 'We created the visual atmosphere for the breakout Colombian artist Kapo during his performance at the prestigious Festival 40 Principales (LOS40). To match his hit "Ohnana" and his unique "fly" aesthetic, we developed nature-inspired visuals mixed with afro-beat textures and warm, organic color palettes. The content provided a chill yet rhythmic backdrop that perfectly complemented his connection with the massive festival crowd.',
     shortDescription: 'Organic and afro-beat inspired visuals for the rising Colombian star.',
-    image: 'https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=1600&q=80',
+    image: kapoFestival40Image,
     category: 'Festival Performance',
     year: 2024,
     client: 'Sony Music / Kapo',
@@ -624,7 +630,7 @@ export const projects = [
     },
     description: 'For the legendary Australian band Men at Work at the Viña del Mar Festival 2024, we crafted a visual journey through their iconic discography. The screens came alive with retro-futuristic 80s aesthetics, neon grids, and playful animations referencing "Down Under" motifs. The design focus was to honor their classic rock legacy while providing a crisp, modern broadcast look that resonated with both the live audience at Quinta Vergara and millions of viewers at home.',
     shortDescription: 'Retro-inspired broadcast package for the rock legends.',
-    image: 'https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=1600&q=80',
+    image: menAtWorkVina2024Image,
     category: 'Festival / Broadcast',
     year: 2024,
     client: 'Bizarro / Men at Work',
@@ -650,7 +656,7 @@ export const projects = [
     },
     description: 'Returning to the stage that embraced him, we developed the visual concept for Matteo Bocelli\'s solo performance at Viña 2026. Stepping away from pure classical visuals, we introduced a cinematic, dreamlike atmosphere featuring particle simulations, starry nightskies, and subtle light architecture. The visuals were designed to breathe with the music, providing a sophisticated and romantic backdrop that highlighted his powerful vocal performance without distracting from his stage presence.',
     shortDescription: 'Cinematic and elegant visual accompaniment for the Italian virtuoso.',
-    image: 'https://images.unsplash.com/photo-1552422535-c45813c61732?w=1600&q=80',
+    image: matteoBocelliVina2026Image,
     category: 'Festival Performance',
     year: 2026,
     client: 'Universal Music / Matteo Bocelli',
@@ -676,7 +682,7 @@ export const projects = [
     },
     description: 'For Pablo Chill-E\'s historic debut at the Viña del Mar Festival 2026, we pulled out all the stops to bring the gritty, raw energy of the street to the most important stage in Latin America. The visual direction was bold, aggressive, and unapologetically urban, featuring graffiti-inspired motion graphics, high-contrast strobe effects, and nods to his "Shishigang" movement. It was a visual manifesto that celebrated the rise of Chilean trap to the mainstream.',
     shortDescription: 'Raw, high-energy urban visuals for the trap icon\'s main stage debut.',
-    image: 'https://images.unsplash.com/photo-1506157786151-b8491531f063?w=1600&q=80',
+    image: pabloChillEVina2026Image,
     category: 'Festival Performance',
     year: 2026,
     client: 'Pablo Chill-E / Bizarro',

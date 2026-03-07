@@ -1,0 +1,31 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="220" y1="100" x2="1400" y2="840" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#130707"/>
+      <stop offset="0.48" stop-color="#401010"/>
+      <stop offset="1" stop-color="#09090C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <path d="M0 612C168 578 315 561 470 566C628 572 735 618 896 621C1083 625 1189 560 1352 558C1444 557 1527 568 1600 587V900H0V612Z" fill="#08080B" fill-opacity="0.82"/>
+  <path d="M80 200L360 130" stroke="#FF4040" stroke-width="14" stroke-linecap="round" stroke-opacity="0.55"/>
+  <path d="M1280 196L1520 126" stroke="#FF4040" stroke-width="14" stroke-linecap="round" stroke-opacity="0.55"/>
+  <path d="M198 308L458 244" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-opacity="0.18"/>
+  <path d="M1180 298L1440 234" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-opacity="0.18"/>
+  <rect x="566" y="258" width="468" height="232" rx="18" fill="#4F1111" fill-opacity="0.22" stroke="#FF3A3A" stroke-opacity="0.38"/>
+  <path d="M605 306H995" stroke="#FF3A3A" stroke-width="8" stroke-dasharray="20 16"/>
+  <path d="M605 354H995" stroke="#FFFFFF" stroke-width="5" stroke-opacity="0.32" stroke-dasharray="10 10"/>
+  <path d="M605 401H995" stroke="#FF3A3A" stroke-width="6" stroke-dasharray="14 12"/>
+  <path d="M800 444L770 522H830L800 444Z" fill="#09090B"/>
+  <rect x="788" y="514" width="24" height="116" rx="6" fill="#09090B"/>
+  <path d="M500 554L696 302" stroke="#FF3A3A" stroke-width="10" stroke-linecap="round" stroke-opacity="0.65"/>
+  <path d="M1100 554L904 302" stroke="#FF3A3A" stroke-width="10" stroke-linecap="round" stroke-opacity="0.65"/>
+  <circle cx="202" cy="746" r="9" fill="#FFD2D2" fill-opacity="0.58"/>
+  <circle cx="260" cy="728" r="6" fill="#FFD2D2" fill-opacity="0.46"/>
+  <circle cx="1380" cy="744" r="9" fill="#FFD2D2" fill-opacity="0.58"/>
+  <circle cx="1440" cy="724" r="6" fill="#FFD2D2" fill-opacity="0.46"/>
+  <text x="112" y="120" fill="#FFFFFF" font-size="30" font-family="Arial, Helvetica, sans-serif" letter-spacing="10">NOCTILUCA</text>
+  <text x="110" y="190" fill="#FFFFFF" font-size="90" font-weight="700" font-family="Arial, Helvetica, sans-serif">PABLO</text>
+  <text x="110" y="272" fill="#FF4C4C" font-size="104" font-weight="700" font-family="Arial, Helvetica, sans-serif">CHILL-E</text>
+  <text x="112" y="332" fill="#FFFFFF" fill-opacity="0.78" font-size="28" font-family="Arial, Helvetica, sans-serif" letter-spacing="6">VINA 2026 URBAN MANIFESTO</text>
+</svg>

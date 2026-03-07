@@ -1,0 +1,40 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="220" y1="120" x2="1380" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2A0E2E"/>
+      <stop offset="0.45" stop-color="#8D3D58"/>
+      <stop offset="1" stop-color="#F08A4B"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1130 290) rotate(90) scale(220 220)">
+      <stop stop-color="#FFD66B"/>
+      <stop offset="1" stop-color="#FFD66B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="floor" x1="800" y1="540" x2="800" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#14151B" stop-opacity="0"/>
+      <stop offset="1" stop-color="#07090D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#sun)"/>
+  <path d="M0 615C155 565 282 536 410 528C557 519 653 549 800 549C947 549 1043 507 1190 499C1318 491 1445 521 1600 571V900H0V615Z" fill="#0A0D14" fill-opacity="0.7"/>
+  <path d="M0 662C182 611 324 589 470 591C621 593 696 646 842 653C996 660 1115 598 1276 592C1393 588 1495 607 1600 636V900H0V662Z" fill="url(#floor)"/>
+  <circle cx="220" cy="744" r="10" fill="#FFF0B8" fill-opacity="0.7"/>
+  <circle cx="290" cy="728" r="8" fill="#FFF0B8" fill-opacity="0.65"/>
+  <circle cx="357" cy="748" r="9" fill="#FFF0B8" fill-opacity="0.72"/>
+  <circle cx="1285" cy="733" r="10" fill="#FFF0B8" fill-opacity="0.68"/>
+  <circle cx="1355" cy="715" r="7" fill="#FFF0B8" fill-opacity="0.6"/>
+  <circle cx="1418" cy="738" r="9" fill="#FFF0B8" fill-opacity="0.7"/>
+  <rect x="625" y="278" width="350" height="198" rx="14" fill="#FF8A5B" fill-opacity="0.18" stroke="#FFD06A" stroke-opacity="0.45"/>
+  <rect x="656" y="304" width="288" height="147" rx="10" fill="#FDB07F" fill-opacity="0.16"/>
+  <path d="M799 445L776 503H823L799 445Z" fill="#11141A"/>
+  <rect x="788" y="497" width="22" height="112" rx="6" fill="#11141A"/>
+  <path d="M466 512L596 316" stroke="#B76BE2" stroke-width="10" stroke-linecap="round" stroke-opacity="0.65"/>
+  <path d="M1136 512L1004 316" stroke="#B76BE2" stroke-width="10" stroke-linecap="round" stroke-opacity="0.65"/>
+  <path d="M560 545L712 366" stroke="#FFD66B" stroke-width="7" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M1040 545L888 366" stroke="#FFD66B" stroke-width="7" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M0 792H1600" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2"/>
+  <text x="110" y="120" fill="#FFF7EA" font-size="30" font-family="Arial, Helvetica, sans-serif" letter-spacing="10">NOCTILUCA</text>
+  <text x="110" y="175" fill="#FFFFFF" font-size="96" font-weight="700" font-family="Arial, Helvetica, sans-serif">MANUEL</text>
+  <text x="110" y="255" fill="#FFD66B" font-size="96" font-weight="700" font-family="Arial, Helvetica, sans-serif">TURIZO</text>
+  <text x="112" y="315" fill="#FFF7EA" fill-opacity="0.82" font-size="28" font-family="Arial, Helvetica, sans-serif" letter-spacing="6">2000 TOUR VISUAL CONCEPT</text>
+</svg>
