@@ -56,27 +56,25 @@ function App() {
      
       <Navbar />
      
-      <section className="snap-section">
+     
         <Home />
-      </section>
+    
       
   
-      <section className="snap-section">
+    
         <About />
         
-      </section>
+      
    
-          <section className="snap-section">
+         
         <ClientsTicker />
         <TechPartners />
-      </section>
- 
-      <section className="snap-section">
+  
         <Portfolio />
           <Contact />
          <Footer />
        
-      </section>
+ 
 
       
 

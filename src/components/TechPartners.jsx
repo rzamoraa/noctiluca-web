@@ -2,53 +2,53 @@ import React from 'react'
 
 const TechPartners = () => {
   return (
-    <div className="w-full bg-noctiluca-dark py-48 border-b border-white/5 relative overflow-hidden flex flex-col items-center">
+    <div className="w-full bg-noctiluca-dark py-20 border-b border-white/5 relative overflow-hidden flex flex-col items-center">
       {/* Background Ambience */}
       <div className="absolute top-0 left-0 w-full h-full bg-noctiluca-primary/5 opacity-20 pointer-events-none"></div>
 
       <div className="w-full max-w-6xl mx-auto flex flex-col items-center text-center z-10 px-6">
         
         {/* 1. Small Header */}
-        <h3 className="text-[10px] md:text-sm tracking-[0.5em] uppercase text-gray-500 font-light mb-24 border-b border-white/10 pb-8">
+        <h3 className="text-[10px] md:text-sm tracking-[0.5em] uppercase text-gray-500 font-light mb-8 border-b border-white/10 pb-4">
           OFFICIAL TECHNOLOGY PARTNERS
         </h3>
 
         {/* 2. Main Statement */}
-        <h2 className="text-2xl md:text-5xl font-medium text-white leading-tight tracking-wide mb-20">
+        <h2 className="text-2xl md:text-5xl font-medium text-white leading-tight tracking-wide mb-8">
           Empowered by <span className="text-noctiluca-primary">industry leaders</span> <br className="hidden md:block"/>
           to deliver <span className="italic font-light text-noctiluca-accent">limitless creativity</span>.
         </h2>
 
         {/* 3. Description of Support */}
-        <p className="text-xs md:text-sm text-gray-400 font-light tracking-widest max-w-3xl leading-relaxed mb-32">
+        <p className="text-xs md:text-sm text-gray-400 font-light tracking-widest max-w-3xl leading-relaxed mb-12">
            We are honored to have the official support and sponsorship of the world's most advanced graphics engines and hardware manufacturers. This strategic alliance ensures our productions are built on the bedrock of stability, granting us access to cutting-edge tools that define the future of live entertainment.
         </p>
 
         {/* 4. Attributes */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-32 w-full mb-40 max-w-4xl border-t border-white/5 pt-24">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 w-full mb-16 max-w-4xl border-t border-white/5 pt-8">
              <div className="flex flex-col items-center">
-                <span className="text-noctiluca-primary text-lg md:text-2xl font-bold mb-6">STABILITY</span>
+                <span className="text-noctiluca-primary text-lg md:text-2xl font-bold mb-2">STABILITY</span>
                 <span className="text-[10px] tracking-[0.2em] uppercase text-gray-500">Mission Critical Certified</span>
              </div>
              <div className="flex flex-col items-center">
-                <span className="text-noctiluca-accent text-lg md:text-2xl font-bold mb-6">INNOVATION</span>
+                <span className="text-noctiluca-accent text-lg md:text-2xl font-bold mb-2">INNOVATION</span>
                 <span className="text-[10px] tracking-[0.2em] uppercase text-gray-500">Alpha/Beta Access</span>
              </div>
              <div className="flex flex-col items-center">
-                <span className="text-white text-lg md:text-2xl font-bold mb-6">PERFORMANCE</span>
+                <span className="text-white text-lg md:text-2xl font-bold mb-2">PERFORMANCE</span>
                 <span className="text-[10px] tracking-[0.2em] uppercase text-gray-500">High-End Optimization</span>
              </div>
         </div>
 
         {/* 5. Powered By Label */}
-         <div className="flex items-center gap-8 mb-24 opacity-60">
-            <div className="h-[1px] w-24 bg-white/20"></div>
+         <div className="flex items-center gap-4 mb-8 opacity-60">
+            <div className="h-[1px] w-12 bg-white/20"></div>
             <span className="text-[10px] tracking-[0.3em] uppercase text-white">POWERED BY</span>
-            <div className="h-[1px] w-24 bg-white/20"></div>
+            <div className="h-[1px] w-12 bg-white/20"></div>
          </div>
 
         {/* 6. Logos */}
-        <div className="flex flex-wrap justify-center items-center gap-24 md:gap-40 opacity-80 z-10 max-w-5xl mx-auto px-6">
+        <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-80 z-10 max-w-5xl mx-auto px-6">
           
           {/* Blackmagic Design */}
           <div className="group flex flex-col items-center justify-center transition-all duration-300 hover:opacity-100 hover:scale-105">

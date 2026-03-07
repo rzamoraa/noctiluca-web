@@ -29,9 +29,7 @@ const ClientsName = () => {
 
       {/* Header title */}
       <div className="mb-2 text-center z-20 relative">
-        <h3 className="text-[10px] md:text-xs tracking-[0.4em] uppercase text-gray-500 font-light">
-          SELECTED <span className="text-noctiluca-primary"> CLIENTS</span>
-        </h3>
+
       </div>
 
       {/* Ticker Container */}

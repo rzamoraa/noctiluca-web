@@ -9,6 +9,14 @@ import menAtWorkVina2024Image from '../assets/projects/men-at-work-vina-2024.svg
 import matteoBocelliVina2026Image from '../assets/projects/matteo-bocelli-vina-2026.svg'
 import pabloChillEVina2026Image from '../assets/projects/pablo-chill-e-vina-2026.svg'
 
+import anaGabrielMain from './tour-ana-gabriel-2025/images/main.jpg'
+import anaGabrielGallery1 from './tour-ana-gabriel-2025/images/gallery-1.jpg'
+import anaGabrielGallery2 from './tour-ana-gabriel-2025/images/gallery-2.jpg'
+import anaGabrielGallery3 from './tour-ana-gabriel-2025/images/gallery-3.jpg'
+import anaGabrielGallery4 from './tour-ana-gabriel-2025/images/gallery-4.jpg'
+import anaGabrielGallery5 from './tour-ana-gabriel-2025/images/gallery-5.jpg'
+import anaGabrielGallery6 from './tour-ana-gabriel-2025/images/gallery-6.jpg'
+
 export const projects = [
   {
     id: 'visuales-vina-2023',
@@ -181,14 +189,17 @@ export const projects = [
     },
     description: 'We led the visual development for the iconic "Un Deseo Más" Tour (2024-2025), celebrating the monumental 50-year career of the Latin ballad legend, Ana Gabriel. We generated a bespoke catalog of visuals centered around profound elegance: soft lighting textures, simulated stardust particles, and breathtaking cinematic sunsets. These environments perfectly embraced her acoustic and ranchera interpretations, drastically elevating the production value across packed arenas and stadiums throughout Latin & North America.',
     shortDescription: 'Warm, elegant, and cinematic atmospheres for the 50th Anniversary Tour.',
-    image: 'https://images.unsplash.com/photo-1506157786151-b8491531f063?w=1600&q=80',
+    image: anaGabrielMain,
     category: 'Tour Visuals',
     year: 2025,
     client: 'Ana Gabriel',
     gallery: [
-      'https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=1200&q=80',
-      'https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=1200&q=80',
-      'https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=1200&q=80'
+      anaGabrielGallery1,
+      anaGabrielGallery2,
+      anaGabrielGallery3,
+      anaGabrielGallery4,
+      anaGabrielGallery5,
+      anaGabrielGallery6
     ],
     videos: [],
     details: {

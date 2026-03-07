@@ -1,6 +1,9 @@
 # Instrucciones para Agregar Proyectos
 
 ## Estructura de Carpetas
+assets ubicacion 
+\\truenas\Noc10\NOCTILUCA\Galeria 
+
 
 Cada proyecto debe estar en su propia carpeta dentro de `src/projects/`:
 

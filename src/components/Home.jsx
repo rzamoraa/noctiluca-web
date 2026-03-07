@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className=" w-full h-[100vh] md:h-[50vh] bg-noctiluca-dark  flex flex-col items-center justify-center relative overflow-hidden"
+      className=" mt-16 bg-noctiluca-dark  flex flex-col items-center justify-center relative overflow-hidden"
     >
       {/* Video de fondo */}
       <div className="absolute inset-0 w-full h-full z-0">
@@ -52,15 +52,12 @@ const Home = () => {
         </div>
         
         {/* Ticker de Clientes */}
-        <div className="w-full mt-auto mb-16 md:mb-24">
+        <div className=" mx-52 w-full ">
           <ClientsName />
         </div>
       </div>
 
-      {/* Indicador de scroll */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 opacity-50 animate-bounce">
-        <div className="w-px h-16 bg-linear-to-b from-transparent via-noctiluca-primary to-transparent"></div>
-      </div>
+      
     </section>
   )
 }

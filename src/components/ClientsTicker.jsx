@@ -25,16 +25,9 @@ const ClientsTicker = () => {
     
     <div className="w-full bg-noctiluca-dark  border-y border-white/5 relative overflow-hidden flex flex-col items-center">
       {/* Decorative glows */}
-
-
-    
-
-
-      
-      
   
         <h3 className="text-[10px] md:text-xs tracking-[0.4em] uppercase text-gray-500 font-light">
-          TRUSTED BY <span className="text-noctiluca-primary">PARTNERS</span>
+          SELECTED <span className="text-noctiluca-primary"> CLIENTS</span>
         </h3>
    
 

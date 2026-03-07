@@ -162,7 +162,7 @@ const ProjectDetail = ({ project, onClose }) => {
         
         <button
           onClick={onClose}
-          className=" h-[10vh] md:h-[10vh] text-gray-400 hover:text-noctiluca-accent text-sm md:text-base tracking-[0.3em] uppercase transition-all duration-500 relative group flex items-center gap-2 mb-6"
+          className="  text-gray-400 hover:text-noctiluca-accent text-sm md:text-base tracking-[0.3em] uppercase transition-all duration-500 relative group flex items-center gap-2 mb-6"
         >
           <span>← BACK</span>
           <span className="absolute -bottom-2 left-1/2 w-0 h-px bg-noctiluca-accent group-hover:w-full group-hover:left-0 transition-all duration-500"></span>
