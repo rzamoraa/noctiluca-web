@@ -32,11 +32,11 @@ const ComingSoon = ({ onUnlock }) => {
         />
         
         <h2 className="text-2xl md:text-3xl font-light text-white mb-4 uppercase tracking-[0.2em]">
-          En remodelación
+          Under Construction
         </h2>
         <div className="w-16 h-0.5 bg-noctiluca-primary mx-auto mb-6"></div>
         <p className="text-gray-400 mb-16 text-sm md:text-base font-light tracking-wide">
-          Estamos preparando nuestro nuevo portafolio.
+          We are preparing our new portfolio.
         </p>
         
         {/* Zona oculta de contraseña (medio transparente) */}
@@ -45,7 +45,7 @@ const ComingSoon = ({ onUnlock }) => {
           className="mt-12 flex flex-col items-center opacity-20 hover:opacity-100 focus-within:opacity-100 transition-all duration-500"
         >
           <p className="text-[10px] text-gray-500 mb-3 uppercase tracking-widest">
-            Acceso Privado
+            Private Access
           </p>
           <div className="flex gap-2">
             <input 
@@ -59,10 +59,10 @@ const ComingSoon = ({ onUnlock }) => {
               type="submit" 
               className="bg-noctiluca-dark border border-gray-800 rounded-sm px-4 py-2 text-sm hover:border-noctiluca-primary hover:text-noctiluca-accent transition-colors"
             >
-              Entrar
+              Enter
             </button>
           </div>
-          {error && <span className="text-red-500 text-xs mt-3">Contraseña incorrecta</span>}
+          {error && <span className="text-red-500 text-xs mt-3">Incorrect password</span>}
         </form>
       </div>
     </div>

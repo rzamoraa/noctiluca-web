@@ -3,19 +3,19 @@ import React from 'react'
 const ClientsName = () => {
   // Array estructurado con los clientes confiables para hacer el componente escalable
   const clients = [
-    { name: 'Festival de Viña', text: 'VIÑA DEL MAR' },
-    { name: 'Teletón', text: 'TELETÓN' },
-    { name: 'Latin Grammy', text: 'LATIN GRAMMY' },
-    { name: 'Ana Gabriel', text: 'ANA GABRIEL' },
-    { name: 'Maná', text: 'MANÁ' },
-    { name: 'Humbe', text: 'HUMBE' },
-    { name: 'Ricardo Arjona', text: 'RICARDO ARJONA' },
-    { name: 'Julión Álvarez', text: 'JULIÓN ÁLVAREZ' },
-    { name: 'Bad Bunny', text: 'BAD BUNNY' },
-    { name: 'Yeison Jimenez', text: 'YEISON JIMENEZ' },
-    { name: 'Marco Antonio Solís', text: 'MARCO A. SOLÍS' },
-    { name: 'Kid Voodoo', text: 'KID VOODOO' },
-    { name: 'Cris MJ', text: 'CRIS MJ' }
+    { name: 'Festival de Viña', text: '| VIÑA DEL MAR |' },
+    { name: 'Teletón', text: '| TELETÓN |' },
+    { name: 'Latin Grammy', text: '| LATIN GRAMMY |' },
+    { name: 'Ana Gabriel', text: '| ANA GABRIEL |' },
+    { name: 'Maná', text: '| MANÁ |' },
+    { name: 'Humbe', text: '| HUMBE |' },
+    { name: 'Ricardo Arjona', text: '| RICARDO ARJONA |' },
+    { name: 'Julión Álvarez', text: '| JULIÓN ÁLVAREZ |' },
+    { name: 'Super Bowl Halftime', text: '| BAD BUNNY | SUPER BOWL HALFTIME |' },
+    { name: 'Yeison Jimenez', text: '| YEISON JIMENEZ |' },
+    { name: 'Marco Antonio Solís', text: '| MARCO A. SOLÍS |' },
+    { name: 'Kid Voodoo', text: '| KID VOODOO |' },
+    { name: 'Cris MJ', text: '| CRIS MJ |' }
   ]
 
   // Duplicamos el array para crear un loop infinito continuo (Marquee/Ticker effect)
@@ -30,7 +30,7 @@ const ClientsName = () => {
       {/* Header title */}
       <div className="mb-10 text-center z-20 relative">
         <h3 className="text-[10px] md:text-xs tracking-[0.4em] uppercase text-gray-500 font-light">
-          CONFÍAN EN <span className="text-noctiluca-primary">NOSTROS</span>
+          TRUSTED BY <span className="text-noctiluca-primary">PARTNERS</span>
         </h3>
       </div>
 
