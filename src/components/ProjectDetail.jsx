@@ -1,7 +1,9 @@
-﻿import React, { useEffect, useRef } from 'react'
+﻿import React, { useEffect, useRef, useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 
 const ProjectDetail = ({ project, onClose }) => {
   const scrollRef = useRef(null)
+  const [lightboxImage, setLightboxImage] = useState(null)
 
   // Reset scroll to top when mounting
   useEffect(() => {
@@ -42,11 +44,14 @@ const ProjectDetail = ({ project, onClose }) => {
 
       {/* Main Hero Image */}
       <div className="w-full max-w-6xl mx-auto px-4 md:px-8 mb-24 flex justify-center">
-        <div className="relative w-full aspect-video md:aspect-21/9 rounded-none overflow-hidden border-y border-white/5 bg-noctiluca-dark shadow-2xl">
+        <div 
+          className="relative w-full aspect-video md:aspect-21/9 rounded-none overflow-hidden border-y border-white/5 bg-noctiluca-dark shadow-2xl cursor-pointer group"
+          onClick={() => setLightboxImage(project.image)}
+        >
           <img
             src={project.image}
             alt={project.title}
-            className="w-full h-full object-cover opacity-90 scale-105 animate-[kenburns_20s_ease-out_forwards] mix-blend-lighten"
+            className="w-full h-full object-cover opacity-90 scale-105 group-hover:scale-110 transition-transform duration-[20s] ease-out mix-blend-lighten"
           />
           {/* Vignette Overlay */}
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_20%,#020B0F_120%)] mix-blend-multiply pointer-events-none"></div>
@@ -126,7 +131,8 @@ const ProjectDetail = ({ project, onClose }) => {
             {project.gallery.map((image, index) => (
                <div 
                key={index} 
-               className={`group relative overflow-hidden bg-noctiluca-dark ${index === 0 && project.gallery.length % 2 !== 0 ? 'md:col-span-2 aspect-video md:aspect-21/9' : 'aspect-square md:aspect-video'} border border-white/5 shadow-lg rounded-sm`}
+               className={`group relative overflow-hidden bg-noctiluca-dark ${index === 0 && project.gallery.length % 2 !== 0 ? 'md:col-span-2 aspect-video md:aspect-21/9' : 'aspect-square md:aspect-video'} border border-white/5 shadow-lg rounded-sm cursor-pointer`}
+               onClick={() => setLightboxImage(image)}
              >
                 <img
                   src={image}
@@ -168,6 +174,38 @@ const ProjectDetail = ({ project, onClose }) => {
           <span className="absolute -bottom-2 left-1/2 w-0 h-px bg-noctiluca-accent group-hover:w-full group-hover:left-0 transition-all duration-500"></span>
         </button>
       </div>
+
+      {/* Lightbox / Modal Modal for images */}
+      <AnimatePresence>
+        {lightboxImage && (
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 backdrop-blur-sm px-4 md:px-12 py-8 cursor-pointer"
+            onClick={() => setLightboxImage(null)}
+          >
+            {/* Close button icon */}
+            <div className="absolute top-6 right-6 md:top-10 md:right-10 z-[110] text-white/50 hover:text-white transition-colors cursor-pointer p-4" onClick={() => setLightboxImage(null)}>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 md:h-12 md:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </div>
+
+            <motion.img 
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+              src={lightboxImage} 
+              alt="Lightbox view" 
+              className="max-w-full max-h-full object-contain shadow-2xl rounded-sm ring-1 ring-white/10"
+              onClick={(e) => e.stopPropagation()} // Prevent closing when clicking the image itself
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   )
 }
