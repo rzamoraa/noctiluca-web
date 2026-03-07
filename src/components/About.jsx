@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="w-full bg-noctiluca-dark flex flex-col items-center h-[50vh] justify-center py-20 px-8 relative overflow-hidden"
+      className="w-full bg-noctiluca-dark flex flex-col items-center h-[20vh] md:h-[50vh] justify-center py-20 px-8 relative overflow-hidden"
     >
       {/* Background Ambience */}
       <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-noctiluca-primary/5 rounded-full blur-[120px] pointer-events-none"></div>

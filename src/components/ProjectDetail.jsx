@@ -1,6 +1,6 @@
 ﻿import React, { useEffect, useRef } from 'react'
 
-const ProjectDetail = ({ project }) => {
+const ProjectDetail = ({ project, onClose }) => {
   const scrollRef = useRef(null)
 
   // Reset scroll to top when mounting
@@ -15,7 +15,7 @@ const ProjectDetail = ({ project }) => {
   return (
     <div 
       ref={scrollRef}
-      className="fixed inset-0 z-30 h-dvh w-full overflow-y-auto overflow-x-hidden bg-noctiluca-dark flex flex-col items-center pb-32"
+      className="fixed inset-0 z-30 h-dvh w-full overflow-y-auto overflow-x-hidden bg-noctiluca-dark flex flex-col items-center pb-12"
     >
       {/* Immersive Background Glows */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-200 h-150 bg-cyan-900/10 rounded-full blur-[150px] pointer-events-none -z-10"></div>
@@ -118,7 +118,7 @@ const ProjectDetail = ({ project }) => {
 
       {/* Gallery Section */}
       {project.gallery && project.gallery.length > 0 && (
-        <div className="w-full max-w-5xl mx-auto px-4 md:px-8 mb-32 flex flex-col items-center justify-center">
+        <div className="w-full max-w-5xl mx-auto px-4 md:px-8 mb-16 flex flex-col items-center justify-center">
           <h3 className="text-xs tracking-[0.5em] uppercase text-center text-noctiluca-secondary mb-12 border-b border-noctiluca-primary/20 pb-4 inline-block px-8">
             Visual Documentation
           </h3>
@@ -142,7 +142,7 @@ const ProjectDetail = ({ project }) => {
 
       {/* Videos Section */}
       {project.videos && project.videos.length > 0 && (
-        <div className="w-full max-w-4xl mx-auto px-6 mb-32 flex flex-col items-center justify-center">
+        <div className="w-full max-w-4xl mx-auto px-6 mb-16 flex flex-col items-center justify-center">
           <h3 className="text-xs tracking-[0.5em] uppercase text-center text-noctiluca-secondary mb-12 border-b border-noctiluca-primary/20 pb-4 inline-block px-8">
             Motion
           </h3>
@@ -157,10 +157,17 @@ const ProjectDetail = ({ project }) => {
       )}
 
       {/* Footer Element for Space */}
-      <div className="w-full flex justify-center py-6">
-        <div className="w-full h-px max-w-sm mx-auto bg-linear-to-r from-transparent via-cyan-900/50 to-transparent"></div>
+      <div className="w-full flex flex-col justify-center items-center py-2 gap-4">
+        <div className="w-full h-px max-w-sm mx-auto bg-linear-to-r from-transparent via-cyan-900/50 to-transparent mb-4"></div>
+        
+        <button
+          onClick={onClose}
+          className="text-gray-400 hover:text-noctiluca-accent text-sm md:text-base tracking-[0.3em] uppercase transition-all duration-500 relative group flex items-center gap-2 mb-6"
+        >
+          <span>← Volver</span>
+          <span className="absolute -bottom-2 left-1/2 w-0 h-px bg-noctiluca-accent group-hover:w-full group-hover:left-0 transition-all duration-500"></span>
+        </button>
       </div>
-      <p className="text-center text-[10px] tracking-widest text-white/20 uppercase pb-6 w-full flex justify-center">End of project</p>
     </div>
   )
 }

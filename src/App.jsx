@@ -31,14 +31,6 @@ function App() {
   if (selectedProject) {
     return (
       <div className="relative w-full h-full">
-       
-        <div className=""></div>
-        <button
-          onClick={() => setSelectedProject(null)}
-          className="fixed top-6 left-6 md:top-10 md:left-10 z-40 btn-noctiluca text-sm md:text-base px-4 md:px-6 py-2 md:py-3 transition-transform hover:scale-105"
-        > <Separador />
-          ← Volver
-        </button>
         {selectedProject}
       </div>
     )

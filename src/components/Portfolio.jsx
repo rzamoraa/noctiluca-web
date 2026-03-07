@@ -22,7 +22,7 @@ const Portfolio = ({ setSelectedProject }) => {
   }
 
   const handleProjectClick = (project) => {
-    setSelectedProject(<ProjectDetail project={project} />)
+    setSelectedProject(<ProjectDetail project={project} onClose={() => setSelectedProject(null)} />)
   }
 
   return (

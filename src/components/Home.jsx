@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className=" w-full h-[50vh] bg-noctiluca-dark flex flex-col items-center justify-center relative overflow-hidden"
+      className=" w-full h-[100vh] md:h-[50vh] bg-noctiluca-dark  flex flex-col items-center justify-center relative overflow-hidden"
     >
       {/* Video de fondo */}
       <div className="absolute inset-0 w-full h-full z-0">
