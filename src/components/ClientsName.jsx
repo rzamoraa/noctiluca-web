@@ -22,15 +22,15 @@ const ClientsName = () => {
   const duplicatedClients = [...clients, ...clients]
 
   return (
-    <div className="w-full bg-noctiluca-dark py-12 md:py-16 border-y border-white/5 relative overflow-hidden flex flex-col items-center">
+    <div className="w-full bg-noctiluca-dark  border-y border-white/5 relative overflow-hidden flex flex-col items-center">
       {/* Decorative glows */}
       <div className="absolute left-0 top-0 w-32 h-full bg-linear-to-r from-noctiluca-dark to-transparent z-10 point-events-none"></div>
       <div className="absolute right-0 top-0 w-32 h-full bg-linear-to-l from-noctiluca-dark to-transparent z-10 point-events-none"></div>
 
       {/* Header title */}
-      <div className="mb-10 text-center z-20 relative">
+      <div className="mb-2 text-center z-20 relative">
         <h3 className="text-[10px] md:text-xs tracking-[0.4em] uppercase text-gray-500 font-light">
-          TRUSTED BY <span className="text-noctiluca-primary">PARTNERS</span>
+          SELECTED <span className="text-noctiluca-primary"> CLIENTS</span>
         </h3>
       </div>
 
@@ -40,10 +40,10 @@ const ClientsName = () => {
           {duplicatedClients.map((client, index) => (
             <div 
               key={index} 
-              className="px-8 md:px-12 flex items-center justify-center grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default"
+              className="px-1 flex items-center justify-center  grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default"
             >
               {/* Aquí luego puedes intercambiar la etiqueta <p> por un <img src={client.logo} /> si consigues los PNGs */}
-              <p className="text-sm md:text-lg font-bold tracking-widest text-white whitespace-nowrap">
+              <p className="uppercase  font-light tracking-widest text-noctiluca-primary whitespace-nowrap">
                 {client.text}
               </p>
             </div>
