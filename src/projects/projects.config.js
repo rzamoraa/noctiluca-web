@@ -503,5 +503,63 @@ export const projects = [
       scale: 'World Tour (Stadiums and Arenas)'
     },
     gridSize: '1x1'
+  },
+
+  {
+    id: 'tour-luis-miguel-2023',
+    title: 'Luis Miguel Tour 2023',
+    catchphrase: {
+      prefix: "Illuminating",
+      highlight: "the legend of Latin pop",
+      suffix: "across the Americas."
+    },
+    description: "We designed and produced the full visual package for the highly anticipated comeback tour of Luis Miguel, one of the most iconic Latin pop artists of all time. The project required crafting cinematic-grade 3D environments and motion graphics that matched the grandeur of \"El Sol de México\" — from sweeping aerial choreography of lights and LEDs to intimate slow-motion visual sequences evoking the golden age of Latin romance. Every visual element was meticulously engineered to complement the artist's legendary stage presence across massive stadium venues throughout Mexico, the United States, and Latin America.",
+    shortDescription: "Full visual direction for the landmark comeback tour of Latin music's most enduring icon.",
+    image: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1600&q=80',
+    category: 'Tour Visuals',
+    year: 2023,
+    client: 'Luis Miguel / OCESA',
+    gallery: [
+      'https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=1200&q=80',
+      'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=80',
+      'https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=1200&q=80',
+      'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1200&q=80'
+    ],
+    videos: [],
+    details: {
+      role: 'Visual Direction & Real-Time Content',
+      tools: ['Notch', 'Resolume Arena', 'Cinema 4D', 'After Effects'],
+      scale: 'Stadium Tour — Mexico, USA & Latin America'
+    },
+    gridSize: '2x1'
+  },
+
+  {
+    id: 'visuales-chayanne-tv-2022',
+    title: 'Chayanne — TV Broadcast Visuals 2022',
+    catchphrase: {
+      prefix: "Setting the stage",
+      highlight: "for the most anticipated comeback",
+      suffix: "in Latin pop history."
+    },
+    description: "Prior to the launch of his landmark \"En Todo Estaré Tour\", we developed a bespoke visual identity and motion graphics package for Chayanne's promotional television appearances. These segments aired across major Latin American broadcast networks, serving as the first public glimpse of the aesthetic language that would define his final tour. The work included custom animated backdrops, real-time synchronized LED wall content, and broadcast-safe lower-thirds and transition graphics — all built around the warmth and high-energy charisma that have made Chayanne a beloved figure for four decades.",
+    shortDescription: "Custom broadcast visuals for Chayanne's TV promotional campaign ahead of his final tour.",
+    image: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1600&q=80',
+    category: 'Broadcast & TV Visuals',
+    year: 2022,
+    client: 'Chayanne / Sony Music Latin',
+    gallery: [
+      'https://images.unsplash.com/photo-1598387993441-a364f854cffd?w=1200&q=80',
+      'https://images.unsplash.com/photo-1574169207511-e21a21888031?w=1200&q=80',
+      'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1200&q=80',
+      'https://images.unsplash.com/photo-1506157786151-b8491531f063?w=1200&q=80'
+    ],
+    videos: [],
+    details: {
+      role: 'Broadcast Visual Design & Real-Time Content',
+      tools: ['After Effects', 'Resolume Avenue', 'Cinema 4D', 'DaVinci Resolve'],
+      scale: 'National & International TV Broadcasts (Telemundo, Univision, Canal 13)'
+    },
+    gridSize: '2x1'
   }
 ];
