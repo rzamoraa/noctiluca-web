@@ -17,6 +17,16 @@ import anaGabrielGallery4 from './tour-ana-gabriel-2025/images/gallery-4.jpg'
 import anaGabrielGallery5 from './tour-ana-gabriel-2025/images/gallery-5.jpg'
 import anaGabrielGallery6 from './tour-ana-gabriel-2025/images/gallery-6.jpg'
 
+import manaMain from './tour-mana-2025-2026/images/main.jpg'
+import manaGallery1 from './tour-mana-2025-2026/images/gallery-1.jpg'
+import manaGallery2 from './tour-mana-2025-2026/images/gallery-2.jpg'
+import manaGallery3 from './tour-mana-2025-2026/images/gallery-3.jpg'
+import manaGallery4 from './tour-mana-2025-2026/images/gallery-4.jpg'
+import manaGallery5 from './tour-mana-2025-2026/images/gallery-5.jpg'
+import manaGallery6 from './tour-mana-2025-2026/images/gallery-6.jpg'
+import manaGallery7 from './tour-mana-2025-2026/images/gallery-7.jpg'
+import manaGallery8 from './tour-mana-2025-2026/images/gallery-8.jpg'
+
 export const projects = [
   {
     id: 'visuales-vina-2023',
@@ -219,13 +229,19 @@ export const projects = [
     },
     description: 'Riding the colossal momentum of the "México Lindo y Querido" tour into Maná\'s 2025-2026 global dates, we developed intensely energetic and immersive stage environments. The scope ranges from 3D environmentalist and conservation-aware landscapes—a true hallmark of the band—to photorealistic turbulent oceans and particle rain storms that physically react to the powerful drum solos and the emblematic rock catalog that consistently sells out international stadiums.',
     shortDescription: 'Large-scale hyper-realistic 3D format for Latin rock legends.',
-    image: 'https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=1600&q=80',
+    image: manaMain,
     category: 'Tour Visuals',
     year: 2025,
     client: 'Maná / Live Nation',
     gallery: [
-      'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1200&q=80',
-      'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1200&q=80'
+      manaGallery1,
+      manaGallery2,
+      manaGallery3,
+      manaGallery4,
+      manaGallery5,
+      manaGallery6,
+      manaGallery7,
+      manaGallery8
     ],
     videos: [],
     details: {
