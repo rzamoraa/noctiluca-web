@@ -17,12 +17,7 @@
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Base styles handled by Tailwind, but ensuring correct sizing */
 html, body, #root {
   height: 100%;
   width: 100%;
@@ -41,19 +36,20 @@ html {
 
 @media (min-width: 768px) {
   .scroll-container {
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity; /* Changed from mandatory to proximity for better UX on tall content */
   }
 }
 
 .snap-section {
   display: flex;
   flex-direction: column;
+  min-height: 100vh; /* Ensure sections take full height */
 }
 
 @media (min-width: 768px) {
   .snap-section {
     scroll-snap-align: start;
-    scroll-snap-stop: always;
+    scroll-snap-stop: normal; /* relaxed from always */
   }
 }
 
